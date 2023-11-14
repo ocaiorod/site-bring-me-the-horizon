@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Graphic Designer Opportunity</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Application</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Graphic Designer Opportunity</h1>
+                <p>
+                Please only fill out this form with true information about yourself.
+                </p>
+                <form>
+                    <!-- Your Name -->
+                    <div class="box-input"> <!-- A class "box-input" to make styles easier -->
+                        <label for="name"
+                        >Your Name <span class="required-field">*</span></label
+                        > <!-- Span tag to style "*" in red in indication for required field -->
+                        <input 
+                         type="text" 
+                         name="name" 
+                         id="name" 
+                         class="block" 
+                         placeholder="Type your name"
+                         minlength="1" 
+                         maxlength="30"  
+                         required
+                        /> <!-- Min and Max Length to determinate the minimum and maximum characters for the field -->
+                    </div>
+                    
+                    <!-- Salary Expectation -->
+                    <div class="box-input"> 
+                        <label for="salary-exp"
+                        >Salary Expectation <span class="required-field">*</span></label
+                        >
+                        <input 
+                         type="number" 
+                         name="salary-exp" 
+                         id="salary-exp" 
+                         class="block" 
+                         placeholder="Type your salary expectation" 
+                         required
+                        />
+                    </div>
+
+                    <!-- About Me -->
+                    <div class="box-input"> 
+                        <label for="description"
+                        >About Me <span class="required-field">*</span></label
+                        >
+                        <textarea 
+                        name="about-me" 
+                        id="about-me" 
+                        class="block" 
+                        placeholder="Type a little about you as a professional and your currently skills.">
+                        </textarea>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="box-input"> 
+                        <label for="e-mail"
+                        >E-mail <span class="required-field">*</span></label
+                        >
+                        <input 
+                         type="e-mail" 
+                         name="e-mail" 
+                         id="e-mail" 
+                         class="block" 
+                         placeholder="Type your e-mail for contact"
+                         required
+                        />
+                    </div>
+
+                    <!-- Experience Time -->
+                    <div class="box-input"> 
+                        <label for="experience"
+                        >Experience <span class="required-field">*</span></label
+                        >
+                        <input 
+                         type="text" 
+                         name="experience" 
+                         id="experience" 
+                         class="block" 
+                         placeholder="Type how long you have worked with design"
+                         required
+                        />
+                    </div>
+
+                    <!-- Portfolio -->
+                    <div class="box-input"> 
+                        <label for="portfolio"
+                        >Portfolio <span class="required-field">*</span></label
+                        >
+                        <input 
+                         type="text" 
+                         name="portfolio" 
+                         id="portfolio" 
+                         class="block" 
+                         placeholder="Drop here your portfolio link"
+                         required
+                        />
+                    </div>
+
+                    <!-- Birthday -->
+                    <div class="box-input"> 
+                        <label for="birthday"
+                        >Birthday <span class="required-field">*</span></label
+                        >
+                        <input 
+                         type="date" 
+                         name="birthday" 
+                         id="birthday" 
+                         class="block" 
+                         required
+                        />
+                    </div>
+
+                    <!-- Schooling Level -->
+                    <div class="box-input"> 
+                        <p>Schooling Level <span class="required-field">*</span></p>
+                        <input type="radio" id="high-school" name="schooling">
+                        <label for="high-school">High School</label>
+                        <input type="radio" id="associates" name="schooling">
+                        <label for="associates">Associates</label>
+                        <input type="radio" id="bachelor" name="schooling">
+                        <label for="bachelor">Bachelor</label>
+                        <input type="radio" id="graduate" name="schooling">
+                        <label for="graduate">Graduate</label>
+                    </div>
+
+                    <!-- Softwares -->
+                    <!-- Firt Line Checkboxes -->
+                    <div class="software-box"> 
+                        <p>Softwares <span class="required-field">*</span></p>
+                        <ul class="software-list">
+                            <li>
+                                <input 
+                                 type="checkbox" 
+                                 id="photoshop" 
+                                 name="software[]" 
+                                 value="photoshop"
+                                /> <!-- "[]" for multiple data in the back-end  -->
+                                <label for="photoshop">Adobe Photoshop</label>
+                            </li>
+                            <li>
+                                <input 
+                                 type="checkbox" 
+                                 id="illustrator" 
+                                 name="software[]" 
+                                 value="illustrator"
+                                />
+                                <label for="illustrator">Adobe Illustrator</label>
+                            </li>
+                            <li>
+                                <input 
+                                 type="checkbox" 
+                                 id="indesign" 
+                                 name="software[]" 
+                                 value="indesign"
+                                />
+                                <label for="indesign">Adobe InDesign</label>
+                            </li>
+                            <li>
+                                <input 
+                                 type="checkbox" 
+                                 id="premiere" 
+                                 name="software[]" 
+                                 value="premiere"
+                                />
+                                <label for="premiere">Adobe Premiere</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Second Line Checkboxes -->
+                    <div class="software-box"> 
+                        <ul class="software-list">
+                            <li>
+                                <input 
+                                 type="checkbox" 
+                                 id="after_effects" 
+                                 name="software[]" 
+                                 value="after_effects"
+                                />
+                                <label for="after_effects">Adobe After Effects</label>
+                            </li>
+                            <li>
+                                <input 
+                                 type="checkbox" 
+                                 id="wordpress" 
+                                 name="software[]" 
+                                 value="wordpress"
+                                />
+                                <label for="wordpress">Wordpress</label>
+                            </li>
+                            <li>
+                                <input 
+                                 type="checkbox" 
+                                 id="figma" 
+                                 name="software[]" 
+                                 value="figma"
+                                />
+                                <label for="figma">Figma</label>
+                            </li>
+                            <li>
+                                <input 
+                                 type="checkbox" 
+                                 id="elementor" 
+                                 name="software[]" 
+                                 value="elementor"
+                                />
+                                <label for="elementor">Elementor</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Resume -->
+                    <div class="box-input">
+                        <p>Resume File: <span class="required-field">*</span></p>
+                        <input 
+                         type="file" 
+                         multiple 
+                         accept="image/png, image/jpg, image/pdf" 
+                         id="resume" 
+                         name="resume" 
+                         required>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <input type="submit" value="Submit"/ class="btn-submit"> 
+                </form>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
